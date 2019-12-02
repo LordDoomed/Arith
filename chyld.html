@@ -10,6 +10,11 @@
 			
 		</script>
 		<style>
+			a,a:link,a:visited,a:hover,a:active{
+				color:#000;
+				text-decoration: none;
+				cursor: pointer;
+			}
 			b{
 				position: absolute;
 				transform: translateY(300px);
@@ -26,15 +31,18 @@
 				padding-top: 1em;
 				border-top:5px dashed #000
 			}
+			
 			#list span{
 				display:inline-block;
 				text-align: right;
 				min-width:50%;
 			}
 			#control{
+				position: relative;
 				font-size: 2rem;
 				padding: .5em;
 				background:#ccc;
+				width:100%;
 			}
 			#control a{border: 1px solid #999;
 				border-radius:.2em;
@@ -54,6 +62,10 @@
 			}
 			svg{height:2em; width: auto; vertical-align: middle;}
 			
+			#copy{
+						 position: absolute;
+						  right:1em;
+			}
 		@media print {
 		  #control{
 		  display: none;
@@ -94,6 +106,7 @@
 				<option>100</option>
 			</select>
 			<a id="print">Print</a>
+			<a id="copy" href="https://github.com/LordDoomed/chyld" target="_blank">&copy;</a>
 		</div>
 		<div id="list"></div>
 		<div id="ans"></div>
@@ -132,7 +145,7 @@
 					break;
 					case '20':
 						max=20
-						min=10
+						min=9
 					break;
 					case '100':
 						max=100
@@ -140,12 +153,12 @@
 					break;
 				}
 				minuend=c(r(min+1,max),cV)
-				subtrahend=c(r(min,minuend-1),cV)
+				subtrahend=c(r(1,minuend-1),cV)
 				difference=c(minuend-subtrahend,cV)
 				result=[];
 				if(m=='minus'){//减法
-					result['q']=minuend+'-'+subtrahend
-					result['a']=difference
+						result['q']=minuend+'-'+difference
+						result['a']=subtrahend
 				}else{//加法
 					result['q']=difference+'+'+subtrahend
 					result['a']=minuend
@@ -167,7 +180,7 @@
 				}
 				num1=c(r(min,max),cV)
 				num2=c(r(min,max),cV)
-				product=c(num1*num2,cV)
+				product=c(num1*num2,cV*cV)
 				// console.log(num1,num2)
 				if(m=='times'){
 					result['q']=num1+'&times;'+num2
