@@ -1,7 +1,7 @@
 # chyld
 Come Hate Your Lovely Daddy ;-)
 
-## Demo http://chyld.epizy.com 
+## Try now: http://chyld.epizy.com 
 * Here's a one-file generator of the paper sheet for maths practices.
 * Yes all the kids would hate me.
 * I embed a jQuery in it, because of lazy.
