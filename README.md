@@ -1,4 +1,4 @@
-## Printable Arithmatic Sheets Generator
+## Printable Arithmetic Sheets Generator
 Every kid should hate me
 
 # [Try Now](https://lorddoomed.github.io/Arith/)
