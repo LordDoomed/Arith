@@ -80,6 +80,7 @@
 				<option selected="selected" value="10"><10</option>
 				<option value="20">10-20</option>
 				<option value="100">20-100</option>
+				<option value="999">100-999</option>
 			</select>
 			<span id="method">
 				<a id="add" class="checked">+</a>
@@ -145,6 +146,10 @@
 					case '100':
 						max=100
 						min=20
+					break;
+					case '999':
+						max=999
+						min=100
 					break;
 				}
 				minuend=c(r(min+1,max),cV)
