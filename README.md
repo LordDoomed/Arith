@@ -1,7 +1,7 @@
 # chyld
 Come Hate Your Lovely Daddy ;-)
 
-## Try now: http://chyld.epizy.com 
+## Try now:  https://lorddoomed.github.io/chyld/
 * Here's a single-file-html for print paper sheet of maths practices.
 * Yes all the kids would hate me.
 * I embed a jQuery in it, because of lazy.
